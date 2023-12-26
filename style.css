@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495057;
+}
+.container{
+    width: 50%;
+    height: 50%;
+}
+h1{
+    font-size: 150px;
+    background: rgb(9,28,121);
+    background: linear-gradient(90deg, rgba(9,28,121,1) 34%, rgba(0,212,255,1) 63%);
+    background-clip: text;
+    color: transparent;
+    transition-property: all;
+    -webkit-background-clip: text;
+    animation: ki 2s linear infinite;
+    background-size: 400% 400%;
+}
+@keyframes ki {
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+
+}
